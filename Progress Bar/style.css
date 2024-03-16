@@ -1,0 +1,105 @@
+.skill-container{
+    width: 500px;
+    background-color: rgb(37, 41, 97);
+    padding: 10px;
+    margin: 50px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px rgb(114, 114, 114), -5px -5px 3px rgb(114, 114, 114);
+    
+}
+
+.skill-container li{
+    list-style: none;
+    text-transform: uppercase;
+    margin: 50px 10px;
+    font-weight: bolder;
+    position: relative;
+   
+}
+
+.skill-container li::before{
+    content: '';
+    width: 100%;
+    height: 7px;
+    background-color: rgb(202, 202, 202);
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 100px;
+    
+}
+
+.skill-container li::after{
+    content: '';
+    width:0%;
+    height: 9px;
+    background-color: rgb(255, 251, 0);
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    border-radius: 100px;
+
+    animation-duration: 7s;
+    animation-iteration-count: infinite;animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-timing-function:linear;
+}
+
+.skill-container li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 95%;
+        background-color: rgb(255, 153, 0);
+    }
+}
+
+.skill-container li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 90%;
+        background-color: red
+    }
+}
+
+.skill-container li.java::after{
+    animation-name: java;
+}
+
+@keyframes java{
+    to{
+        width: 80%;
+        background-color: rgba(0, 255, 0, 0.781);
+    }
+}
+
+.skill-container li.php::after{
+    animation-name: php;
+}
+
+@keyframes php{
+    to{
+        width: 85%;
+        background-color: rgb(255, 0, 255);
+    }
+}
+
+.skill-container li.node_js::after{
+    animation-name: node;
+}
+
+@keyframes node{
+    to{
+        width: 90%;
+        background-color: rgb(0, 255, 255);
+    }
+}
